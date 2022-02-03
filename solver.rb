@@ -15,13 +15,18 @@ class Solver
     factorial
   end
 
-  # method 2
+  def reverse
+    @input.reverse
+  end
 
-  # method 3
+  def fizzbuzz
+    divisible_by3 = @input.modulo(3).zero?
+    divisible_by5 = @input.modulo(5).zero?
+
+    return 'fizzbuzz' if divisible_by3 && divisible_by5
+    return 'buzz' if divisible_by5
+    return 'fizz' if divisible_by3
+
+    @input.to_s
+  end
 end
-
-factorial = Solver.new(1)
-factorial2 = Solver.new(0)
-
-puts factorial.factorial
-puts factorial2.factorial
