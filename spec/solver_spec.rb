@@ -14,8 +14,8 @@ describe Solver do
   end
 
   # Factorial number
-  it 'is an instance of solver?' do
-    expect(@factorial1).to be_instace_of Solver
+  it 'kind of Solver?' do
+    expect(@factorial1).to be_kind_of Solver
   end
 
   it 'returns the correct number?' do
@@ -27,8 +27,8 @@ describe Solver do
   end
 
   # Reverse word
-  it 'is an instance of solver?' do
-    expect(@reverse1).to be_instace_of Solver
+  it 'kind of Solver?' do
+    expect(@reverse1).to be_kind_of Solver
   end
 
   it 'return a reverse word' do
@@ -40,9 +40,8 @@ describe Solver do
   end
 
   # FizzBuzz
-
-  it 'is an instance of fizzbuzz?' do
-    expect(@fizzbuzz1).to be_instace_of Solver
+  it 'kind of Solver?' do
+    expect(@fizzbuzz1).to be_kind_of Solver
   end
 
   it 'Fizz' do
