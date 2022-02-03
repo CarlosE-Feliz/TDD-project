@@ -1,4 +1,4 @@
-require '../solver'
+require_relative '../solver'
 
 describe Solver do
   before :each do
@@ -19,11 +19,11 @@ describe Solver do
   end
 
   it 'returns the correct number?' do
-    expect(@factorial1).to eql 120
+    expect(@factorial1.factorial).to eql 120
   end
 
   it 'Should return an error' do
-    expect(@factorial2).to eql @error
+    expect(@factorial2.factorial).to eql @error
   end
 
   # Reverse word
@@ -32,11 +32,11 @@ describe Solver do
   end
 
   it 'return a reverse word' do
-    expect(@reverse1).to eql 'drow'
+    expect(@reverse1.reverse).to eql 'drow'
   end
 
   it 'return a reverse word with spaces' do
-    expect(@reverse2).to eql 'esrevorcim ot emocleW'
+    expect(@reverse2.reverse).to eql 'esrevorcim ot emocleW'
   end
 
   # FizzBuzz
@@ -46,18 +46,18 @@ describe Solver do
   end
 
   it 'Fizz' do
-    expect(@fizzbuzz1).to eql 'fizz'
+    expect(@fizzbuzz1.fizzbuzz).to eql 'fizz'
   end
 
   it 'Buzz' do
-    expect(@fizzbuzz2).to eql 'buzz'
+    expect(@fizzbuzz2.fizzbuzz).to eql 'buzz'
   end
 
   it 'FizzBuzz' do
-    expect(@fizzbuzz3).to eql 'fizzbuzz'
+    expect(@fizzbuzz3.fizzbuzz).to eql 'fizzbuzz'
   end
 
   it 'is not divisible by 3 nor 5?' do
-    expect(@fizzbuzz4).to eql '7'
+    expect(@fizzbuzz4.fizzbuzz).to eql '7'
   end
 end
