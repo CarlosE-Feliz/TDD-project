@@ -22,7 +22,7 @@ So the idea behind TDD is simple enough:
 </br>
  <div align="center">
    <kbd>
-    <img alt="gif" src="" width=100% />
+    <img alt="gif" src="https://user-images.githubusercontent.com/74747182/152387842-fb6d5595-fa98-4424-aebd-c4bd8fa06e6a.png" width=100% />
     <p>TDD tests from the terminal</p>
    </kbd>
 </div>
